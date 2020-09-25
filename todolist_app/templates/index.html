@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+{%  load static  %}
+{% block title %}
+  <title>Welcome To The Taskmate!</title>
+{% endblock title %}
+ {% block content %}
+    <div class='row mt-5'>
+    <div class='col-4'>
+      <img src="{% static  'images/notes.jpg'%}" alt="notes" width="360" height="250">
+    </div>
+    <div class='col-4'>
+    <img src="{% static  'images/notes.jpg'%}" alt="notes" width="360" height="250">
+    </div>
+    <div class='col-4'>
+    <img src="{% static  'images/notes.jpg'%}" alt="notes" width="360" height="250">
+    </div>
+    <div class='row mt-5'>
+     <div class="col-md-10 offset-md-8">
+      <center><p class="h1 mt-3 text-primary"> Hi there this my first WEBSITE </p> </center>
+      <center><p class="h2 mt-3 text-muted"> "excited !!to start this" </p></center>
+      <center><p class="h5 text-body"> I hope i excel in web development </p></center>
+      <center><a href="{%url "todolist"%}"><button type="button" class="btn btn-primary btn-lg btn-block mt-5 shadow-lg">Let's Get Started</button></center>
+     </dv>
+     </p>
+     </div>
+ 
+
+    </div>
+ {% endblock content %}
+  
