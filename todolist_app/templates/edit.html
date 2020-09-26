@@ -5,10 +5,10 @@
  {% block content %}
  </br>
  {% if task_obj.manager == request.user %}
-           <form method="POST" class="row">
+           <form method="POST" class="row justify-content-md-center">
                  {% csrf_token %}
-                    <label class='cl-lg-2'>update  </label>
-                    <input type="text" class="form-control cl-lg-2" name="task" placeholder="{{task_obj.task}}" value="{{task_obj.task}}" >
+                    <label class='col col-lg-2'>update  </label>
+                    <input type="text" class="form-control col-md-auto" name="task" placeholder="{{task_obj.task}}" value="{{task_obj.task}}" >
                     <input type="hidden"  name="done"  value="{{task_obj.done}}" >  
                     <button type="submit" class="btn btn-primary cl-lg-2">Update Task</button>
            </form>
